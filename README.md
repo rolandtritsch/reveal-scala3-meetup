@@ -1,6 +1,6 @@
-# Scala 3 Meetup Slides
+# Scala3 Meetup Slides
 
-Slides and supporting documents for the Scala 3 meetup, authored in Emacs org-mode and published with reveal.js via `org-re-reveal`.
+Slides and supporting documents for the Scala3 meetup, authored in Emacs org-mode and published with reveal.js via `org-re-reveal`.
 
 ## Prerequisites
 

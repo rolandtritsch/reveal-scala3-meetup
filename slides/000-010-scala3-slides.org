@@ -1,53 +1,21 @@
-#+TITLE: No Slides/Just Code
+#+TITLE: SirusXM: Choosing Scala3
 #+SUBTITLE: Scala 3 Meetup
-#+DATE: 04-Jun-2026
+#+DATE: 06-Aug-026
 #+AUTHOR: Roland Tritsch
 #+EMAIL: roland@tritsch.email
 #+REVEAL_VERSION: 4
+#+OPTIONS: timestamp:t title:t author:t
+#+OPTIONS: toc:nil num:nil date:nil
 #+REVEAL_THEME: beige
 #+REVEAL_INIT_OPTIONS: width:"80%", slideNumber: "c/t"
 #+REVEAL_TITLE_SLIDE: <h1 class=title>%t</h1><h3 class=title>%s</h3><h3 class=date>%d</h3><h4 class=email>%e</h4><p class=date style="font-size: 0.5em">Version - {{{time(%Y-%m-%d_%H:%M:%S)}}}</p>
-#+OPTIONS: title:nil author:nil email:nil date:nil timestamp:nil
-#+OPTIONS: toc:nil num:nil 
 
-* Demo: Gastown
+* SiriusXM: Choosing Scala3
 
 - ???
 - ???
 - ???
 
-#+BEGIN_NOTES
+* Questions?
 
-- ???
-- ???
-- ???
-
-#+END_NOTES
- 
-* Demo: Symphony
-
-- ???
-- ???
-- ???
-
-#+BEGIN_NOTES
-
-- ???
-- ???
-- ???
-
-#+END_NOTES
- 
-* Demo: Paperclip
-
-- ???
-- ???
-- ???
-
-#+BEGIN_NOTES
-
-- ???
-- ???
-- ???
-
-#+END_NOTES
+#+REVEAL_HTML: <img src="./images/questions.webp" width="60%"/>
