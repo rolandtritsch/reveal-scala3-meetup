@@ -1,0 +1,23 @@
+#+TITLE: No Slides/Just Code
+#+SUBTITLE: Scala 3 Meetup
+#+DATE: 26-Mar-2026
+#+AUTHOR: Roland Tritsch
+#+EMAIL: roland@tritsch.email
+#+REVEAL_VERSION: 4
+#+REVEAL_THEME: beige
+#+REVEAL_INIT_OPTIONS: width:"80%", slideNumber: "c/t"
+#+REVEAL_TITLE_SLIDE: <h1 class=title>%t</h1><h3 class=title>%s</h3><h3 class=date>%d</h3><h4 class=email>%e</h4><p class=date style="font-size: 0.5em">Version - {{{time(%Y-%m-%d_%H:%M:%S)}}}</p>
+#+OPTIONS: title:nil author:nil email:nil date:nil timestamp:nil
+#+OPTIONS: toc:nil num:nil 
+
+* [[https://youtu.be/ZSGLxozN5wE][Demo]]: Big-Prompt/Spec-Driven Development
+
+- [[https://github.com/github/spec-kit][SpecKit]] by Github
+- Others ...
+
+* [[https://youtu.be/Qn9_GIMMzNc][Demo]]: Big-Prompt/Small-Prompt
+
+- Be smart about it! Choose wisely/conciencly!
+- Build something (What) vs. Do something (How)
+- Vague vs. Specific
+- Product-Manager Mode vs. Pair-Programming Mode 

@@ -1,0 +1,165 @@
+#+TITLE: Past Events
+#+SUBTITLE: Augmented Software-Engineer Meetup
+#+AUTHOR: Roland Tritsch
+#+EMAIL: roland@tritsch.email
+#+DATE: {{{time(%Y-%m-%d %H:%M:%S)}}}
+#+OPTIONS: toc:1
+#+LATEX_CLASS_OPTIONS: [12pt,landscape]
+#+LATEX_HEADER: \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm,landscape]{geometry}
+
+#+LATEX: \newpage
+* 23-Jan-2025
+
+** Tools and Practical AI Usage
+
+Venue: Baseline/SonaLake, Dublin
+
+** Presentations
+
+#+ATTR_LATEX: :align p{14cm}lll
+| Title             | Presenter | Slides | Video |
+|-------------------+-----------+--------+-------|
+| <60>              | <15>      | <10>   | <10>  |
+|-------------------+-----------+--------+-------|
+| Kickoff           | Roland    | [[https://tedn.life/reveal-scala3-meetup/000-000-kickoff-slides.html][Slides]] |       |
+| Tools and tooling | Roland    | [[https://tedn.life/reveal-scala3-meetup/000-010-tools-slides.html][Slides]] |       |
+| Using AI in anger | Ciaran    | [[https://tedn.life/reveal-scala3-meetup/000-020-best.pdf][Slides]] |       |
+| Wrap-up           | Roland    | [[https://tedn.life/reveal-scala3-meetup/000-090-wrapup-slides.html][Slides]] |       |
+
+#+LATEX: \newpage
+* 20-Feb-2025
+
+** Token Windows and Model Scaling
+
+Venue: Baseline/FiServe, Dublin
+
+** Presentations
+
+#+ATTR_LATEX: :align p{14cm}lll
+| Title                             | Presenter     | Slides | Video |
+|-----------------------------------+---------------+--------+-------|
+| <60>                              | <15>          | <10>   | <10>  |
+|-----------------------------------+---------------+--------+-------|
+| Kickoff                           | Roland        | [[https://tedn.life/reveal-scala3-meetup/001-000-kickoff-slides.html][Slides]] |       |
+| A window with 1M tokens!          | Karl Matthias | [[https://tedn.life/reveal-scala3-meetup/001-010-supermaven.pdf][Slides]] |       |
+| When does large, become too large | Eoin Barry    | [[https://tedn.life/reveal-scala3-meetup/001-020-arcpilot.pdf][Slides]] |       |
+| Wrap-up                           | Roland        | [[https://tedn.life/reveal-scala3-meetup/001-090-wrapup-slides.html][Slides]] |       |
+
+#+LATEX: \newpage
+* 20-Mar-2025
+
+** Demo-Day (I)
+
+Venue: Baseline/DreamDev, Dublin
+
+** Presentations
+
+#+ATTR_LATEX: :align p{14cm}lll
+| Title                                      | Presenter | Slides | Video |
+|--------------------------------------------+-----------+--------+-------|
+| <60>                                       | <15>      | <10>   | <10>  |
+|--------------------------------------------+-----------+--------+-------|
+| Kickoff                                    | Roland    | [[https://tedn.life/reveal-scala3-meetup/002-000-kickoff-slides.html][Slides]] |       |
+| Warp: Using DeepSeek for the command-line  | Roland    | [[https://tedn.life/reveal-scala3-meetup/002-010-warp-slides.html][Slides]] |       |
+| Ollama: Running models locally (in VsCode) | Roland    | [[https://tedn.life/reveal-scala3-meetup/002-020-ollama-slides.html][Slides]] |       |
+| Windsurf: Extending it with MCP            | Roland    | [[https://tedn.life/reveal-scala3-meetup/002-030-mcp-slides.html][Slides]] |       |
+| Mobile vs. AI                              | Sasha     | [[https://tedn.life/reveal-scala3-meetup/002-040-mobile.pdf][Slides]] | [[https://youtu.be/BDFP9NlzXTA][Video]] |
+| Wrap-up                                    | Roland    | [[https://tedn.life/reveal-scala3-meetup/002-090-wrapup-slides.html][Slides]] |       |
+
+#+LATEX: \newpage
+* 22-May-2025
+
+** Demo-Day (II)
+
+Venue: Baseline/Intercom, Dublin
+
+** Presentations
+
+#+ATTR_LATEX: :align p{14cm}lll
+| Title                                             | Presenter | Slides | Video |
+|---------------------------------------------------+-----------+--------+-------|
+| <60>                                              | <15>      | <10>   | <10>  |
+|---------------------------------------------------+-----------+--------+-------|
+| Kickoff                                           | Roland    | [[https://tedn.life/reveal-scala3-meetup/003-000-kickoff-slides.html][Slides]] |       |
+| Implementing an MCP Server (in 15 mins)           | Kavith    | [[https://tedn.life/reveal-scala3-meetup/003-010-mcp.pdf][Slides]] | [[https://youtu.be/RIu8i-WscCw][Video]] |
+| Secure coding and secure design with AI           | David     | [[https://tedn.life/reveal-scala3-meetup/003-020-security.pdf][Slides]] | [[https://youtu.be/4mmTqIzimKg][Video]] |
+| Using an agentic AI Platform for code elimination | Iain      | [[https://tedn.life/reveal-scala3-meetup/003-030-refactorer.pdf][Slides]] | [[https://youtu.be/WJW0Qtt5MdQ][Video]] |
+| IDE-less software-engineering with Warp           | Roland    | [[https://tedn.life/reveal-scala3-meetup/003-040-warp-slides.html][Slides]] |       |
+| Wrap-up                                           | Roland    | [[https://tedn.life/reveal-scala3-meetup/003-090-wrapup-slides.html][Slides]] |       |
+
+#+LATEX: \newpage
+* 11-Sep-2025
+
+** Agentic-Coding vs. Vibe-Coding
+
+Venue: Baseline/DBT-Labs, Dublin
+
+** Presentations
+
+#+ATTR_LATEX: :align p{14cm}lll
+| Title                                                          | Presenter | Slides                                                                    | Video                                    |
+|----------------------------------------------------------------+-----------+---------------------------------------------------------------------------+------------------------------------------|
+| <60>                                                           | <15>      | <10>                                                                      | <10>                                     |
+|----------------------------------------------------------------+-----------+---------------------------------------------------------------------------+------------------------------------------|
+| Kickoff                                                        | Roland    | [[https://tedn.life/reveal-scala3-meetup/004-000-kickoff-slides.html][Slides]]      |                                          |
+| Vibing beyond code: Project Management for the lazy            | René      | [[https://tedn.life/reveal-scala3-meetup/004-010-design-coding.pdf][Slides]]      | [[https://youtu.be/Mcd-cnEWEtk][Video]]    |
+| Context Management Is All You Need                             | Jose      | [[https://tedn.life/reveal-scala3-meetup/004-020-context-coding.pdf][Slides]]      | [[https://youtu.be/qBOOhsIpTz0][Video]]    |
+| Autonomous coding for out of distribution long running tasks   | Brian     | [[https://tedn.life/reveal-scala3-meetup/004-030-real-coding.pdf][Slides]]      | [[https://youtu.be/SYsBEzcbcyU][Video]]    |
+| Wrap-up                                                        | Roland    | [[https://tedn.life/reveal-scala3-meetup/004-090-wrapup-slides.html][Slides]]      |                                          |
+
+#+LATEX: \newpage
+* 20-Nov-2025
+
+** Agentic-Coding - The Practitioners Day
+
+Venue: Baseline/Jentic, Dublin
+
+** Presentations
+
+#+ATTR_LATEX: :align p{14cm}lll
+| Title                                                     | Presenter | Slides | Video |
+|-----------------------------------------------------------+-----------+--------+-------|
+| <60>                                                      | <15>      | <10>   | <10>  |
+|-----------------------------------------------------------+-----------+--------+-------|
+| Kickoff                                                   | Roland    | [[https://tedn.life/reveal-scala3-meetup/005-000-kickoff-slides.html][Slides]] |       |
+| Agentic-Coding with Jentic                                | Liam      | [[https://tedn.life/reveal-scala3-meetup/005-010-liam.pdf][Slides]] |       |
+| Practical Agentic-Coding: A journey of 12000 steps        | Karl      | [[https://tedn.life/reveal-scala3-meetup/005-020-karl.pdf][Slides]] | [[https://youtu.be/y8om7rc2kmg][Video]] |
+| From Friction to Flow: Harnessing AI-Assisted Development | Dáire     | [[https://tedn.life/reveal-scala3-meetup/005-030-daire.pdf][Slides]] | [[https://youtu.be/vOocTsPc5dk][Video]] |
+| Wrap-up                                                   | Roland    | [[https://tedn.life/reveal-scala3-meetup/005-090-wrapup-slides.html][Slides]] |       |
+
+#+LATEX: \newpage
+* 28-Jan-2026
+
+** Agentic-Coding - The missing puzzle piece
+
+Venue: ServiceNow, Dublin
+
+** Presentations
+
+#+ATTR_LATEX: :align p{14cm}lll
+| Title                                      | Presenter | Slides | Video |
+|--------------------------------------------+-----------+--------+-------|
+| <60>                                       | <15>      | <10>   | <10>  |
+|--------------------------------------------+-----------+--------+-------|
+| Kickoff                                    | Roland    | [[https://tedn.life/reveal-scala3-meetup/006-000-kickoff-slides.html][Slides]] | [[https://youtu.be/T3k8lrTyC2k][Video]] |
+| AI PR Review: A (ServiceNow) Claude Plugin | Aditya    | [[https://tedn.life/reveal-scala3-meetup/006-010-ai-pr-review.pdf][Slides]] | [[https://youtu.be/Ga8xHdWSHDs][Video]] |
+| No slides. Only code - Sandbox             | Roland    | [[https://tedn.life/reveal-scala3-meetup/006-020-noslides-slides.html][Slides]] | [[https://youtu.be/Uv2AR9xfqLU][Video]] |
+| Wrap-up                                    | Roland    | [[https://tedn.life/reveal-scala3-meetup/006-090-wrapup-slides.html][Slides]] |       |
+
+#+LATEX: \newpage
+* 26-Mar-2026
+
+** Agentic Coding - Agents at Work
+
+Venue: UCD, Dublin
+
+** Presentations
+
+#+ATTR_LATEX: :align p{10cm}llll
+| Title                                   | Presenter | Slides | Video | Notes           |
+|-----------------------------------------+-----------+--------+-------+-----------------|
+| <60>                                    | <15>      | <10>   | <10>  | <20>            |
+|-----------------------------------------+-----------+--------+-------+-----------------|
+| Kickoff                                 | Roland    | [[https://tedn.life/reveal-scala3-meetup/007-000-kickoff-slides.html][Slides]] | [[https://youtu.be/tSSpwTF_qGQ][Video]] |                 |
+| Making Agents work for you              | Brian     | [[https://tedn.life/reveal-scala3-meetup/007-010-agents-at-work.pdf][Slides]] | [[https://youtu.be/dfpOJWPFeCc][Video]] |                 |
+| No slides. Only code - SDD with SpecKit | Roland    | [[https://tedn.life/reveal-scala3-meetup/007-020-noslides-slides.html][Slides]] | [[https://youtu.be/OYCDV1IH-W4][Video]] | [[https://youtu.be/ZSGLxozN5wE][Screencast]] [[https://github.com/rolandtritsch/scala3-sorting-algo-visualizer-speckit][Repo]] |
