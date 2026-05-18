@@ -1,5 +1,5 @@
 #+TITLE: Overview
-#+SUBTITLE: Augmented Software-Engineer Meetup
+#+SUBTITLE: Dublin Scala3 User Meetup
 #+AUTHOR: Roland Tritsch
 #+EMAIL: roland@tritsch.email
 #+DATE: {{{time(%Y-%m-%d %H:%M:%S)}}}
@@ -9,16 +9,13 @@
 
 * Description
 
-In the next 3 years we all need to figure out how to become an Augmented
-Software Engineer. How to use AI to develop better systems faster and how to
-maintain large systems more efficiently.
+By now Scala is obviously a well-known and well-understood programming language (both from a language-concept and from tools/tooling point of view).
 
-Currently we all learn in isolation. That is sub-optimal. The goal of this
-meetup is to convene monthly gatherings where members can exchange knowledge
-about leveraging AI in software development and collectively devise strategies
-for rapid, effective learning on the topic.
+And equally obvious the language and the user are moving on and these days more and more Scala3 becomes the Scala version of choice.
+
+With that we are switching the focus of the meetup from Scala2 to Scala3.
 
 * Links
 
-- [[https://tedn.life/2024/10/24/the-augmented-software-engineer-what-is-it][The Augmented Software Engineer - What is it?]]
+- [[https://www.meetup.com/dublin-scala-users-group/][The Dublin Scala3 User Meetup]]
 - [[https://tedn.life/reveal-scala3-meetup/010-events-doc.pdf][Past Events]]
