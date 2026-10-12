@@ -42,6 +42,10 @@
 
 #+REVEAL_HTML: <figure><img class="r-stretch" src="./images/van.png"/><figcaption style="font-size: 0.5em;">Source: <a href="https://tedn.life">https://tedn.life</a></figcaption></figure>
 
+* Roland
+
+#+REVEAL_HTML: <figure><img class="r-stretch" src="./images/robot.webp"/><figcaption style="font-size: 0.5em;">Source: <a href="https://www.meetup.com/the-augmented-software-engineer">https://www.meetup.com/the-augmented-software-engineer</a></figcaption></figure>
+
 * Thank you!
 
 #+REVEAL_HTML: <img src="./images/sirius-logo.png" width="50%"/>
