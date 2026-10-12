@@ -14,7 +14,15 @@
 
 * Welcome
 
-#+REVEAL_HTML: <img class="r-stretch" src="./images/robot.webp"/>
+#+REVEAL_HTML: <img class="r-stretch" src="./images/scala-3-logo.svg"/>
+
+* What?
+
+- Reboot!!!
+- Pandemic took its toll :(
+- Focus on Scala3 :)
+- Presentations/Contributions welcome!!!
+- This is the first of three (reboot) meetups here at SiriusXM
 
 * Roland
 
@@ -28,6 +36,7 @@
 - Ex-IONA, Ex-Gilt, Ex-Nitro, Ex-Community, ...
 - SaaS, Distributed-Systems, Event-based Systems, ...
 - Functional Programing (Haskell, Scala, Elixir/Erlang, ...)
+- Scala since 2011 (2.8/sbt 0.10). Contributor to scoverage
 
 * Roland
 
@@ -37,19 +46,11 @@
 
 #+REVEAL_HTML: <img src="./images/sirius-logo.png" width="50%"/>
 
-* What?
-
-- Reboot!!!
-- Pandemic took its toll :(
-- Focus on Scala3 :)
-- Presentations/Contributions welcome!!!
-- This is the first of three (reboot) meetups here at SiriusXM
-
 * Agenda/Today
 
 - 18:00 - Doors open. Pizza and Beer. Initial mingling - All
-- 18:30 - Kickoff - Roland, Damian
-- 18:45 - Why SiriusXM chose Scala3 for its Next-Gen Platform - Damian/Jakub
+- 18:30 - Kickoff - Roland/Damian
+- 18:45 - Why Scala3 @ SiriusXM - Damian/Jakub
 - 19:30 - Scala3 and AI: Friends or Foes? - Roland
 - 20:00 - Wrapup. More mingling - All
 
