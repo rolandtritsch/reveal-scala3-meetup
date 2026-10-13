@@ -15,7 +15,7 @@
 * Myth Buster?!?!
 
 #+BEGIN_QUOTE
-AIs are better at generating code for establish programing languages like Java,
+AIs are better at generating code for established programing languages like Java,
 Python, C++, ... than less established, niche languages like Haskell, Scala,
 Elixir!
 #+END_QUOTE
@@ -28,7 +28,7 @@ Elixir!
 
 * Part 1 - The test
 
-#+REVEAL_HTML: <figure><img src="./images/aoc.png" width="80%"/><figcaption style="font-size: 0.5em;"><a href="https://adventofcode.com/2025">Source: https://adventofcode.com/2025</a></figcaption></figure>
+#+REVEAL_HTML: <figure><img src="./images/aoc.png" width="60%"/><figcaption style="font-size: 0.5em;"><a href="https://adventofcode.com/2025">Source: https://adventofcode.com/2025</a></figcaption></figure>
 
 * Part 1 - The dark factory
 
@@ -36,7 +36,7 @@ Elixir!
 
 * Part 1 - The agents
 
-#+REVEAL_HTML: <figure><img src="./images/aoc-solver-2025-dashboard-agents.png" width="80%"/><figcaption style="font-size: 0.5em;"><a href="https://paperclip.ing">Source: https://paperclip.ing</a></figcaption></figure>
+#+REVEAL_HTML: <figure><img src="./images/aoc-solver-2025-agents.png" width="80%"/><figcaption style="font-size: 0.5em;"><a href="https://paperclip.ing">Source: https://paperclip.ing</a></figcaption></figure>
 
 * Part 1 - The setup
 
@@ -59,11 +59,11 @@ Programming Languages - https://mgree.github.io/papers/2022_multiple.pdf
 
 * Part 2 - The languages
 
-#+REVEAL_HTML: <figure><img src="./images/multiple-languages.png" width="80%"/><figcaption style="font-size: 0.5em;"><a href="https://mgree.github.io/papers/2022_multiple.pdf">Source: https://mgree.github.io/papers/2022_multiple.pdf</a></figcaption></figure>
+#+REVEAL_HTML: <figure><img src="./images/multiple-languages.png" width="40%"/><figcaption style="font-size: 0.5em;"><a href="https://mgree.github.io/papers/2022_multiple.pdf">Source: https://mgree.github.io/papers/2022_multiple.pdf</a></figcaption></figure>
 
 * Part 2 - The findings
 
-#+REVEAL_HTML: <figure><img src="./images/multiple-features.png" width="80%"/><figcaption style="font-size: 0.5em;"><a href="https://mgree.github.io/papers/2022_multiple.pdf">Source: https://mgree.github.io/papers/2022_multiple.pdf</a></figcaption></figure>
+#+REVEAL_HTML: <figure><img src="./images/multiple-features.png" width="50%"/><figcaption style="font-size: 0.5em;"><a href="https://mgree.github.io/papers/2022_multiple.pdf">Source: https://mgree.github.io/papers/2022_multiple.pdf</a></figcaption></figure>
 
 * Part 2 - The results
 
