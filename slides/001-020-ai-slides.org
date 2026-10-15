@@ -26,6 +26,12 @@ Elixir!
 
 #+REVEAL_HTML: <figure><img src="./images/z-l-continuum_roland.png" height="480"/><figcaption style="font-size: 0.5em;">Source: <a href="https://sub.thursdai.news/p/the-lopopolo-zechner-spectrum">https://sub.thursdai.news</a></figcaption></figure>
 
+* Disclaimer
+
+- This is semi-scentific
+- Feel free to disagree
+- The hypothesis is tongue-in-cheek
+
 * Part 1 - The test
 
 #+REVEAL_HTML: <figure><img src="./images/aoc.png" width="60%"/><figcaption style="font-size: 0.5em;"><a href="https://adventofcode.com/2025">Source: https://adventofcode.com/2025</a></figcaption></figure>
@@ -48,7 +54,7 @@ Elixir!
 * Part 1 - The setup
 
 - Paperclip
-- AOC Solver 2025
+- AOC Solver 2025 (Scala/Python)
 - Openrouter (DeepSeek V4 Flash/Pro)
 
 * Part 1 - The result
@@ -72,10 +78,17 @@ Elixir!
 #+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-15-chart-tokens-fresh-output-days01-09-scala-vs-python.png"/>
 
 * Part 1 - The result
+:PROPERTIES:
+:REVEAL_EXTRA_ATTR: class="no-title"
+:END:
 
-- Time
-- Tokens/Money
-- Quality
+#+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-15-chart-quality-days01-09.png"/>
+
+* Part 1 - The result
+
+- Time - No evidence that Scala is slower than Python (despite sbt)
+- Tokens/Money - No evidence that Scala is more expensive than Python
+- Quality - No evidence that the Scala code is worse than the Python code 
 
 * Part 2 - The research
 
@@ -94,11 +107,24 @@ Programming Languages - https://mgree.github.io/papers/2022_multiple.pdf
 
 * Part 2 - The results
 
-- ???
-- ???
-- ???
+- The size of the corpus matters less than expected
+- The quality of the corpus matters (less good/young code is better, than a lot of bad/old code)
+- The language being statically typed (with a good compiler and good error messages) matters
+  - Getting it right the first time matters less, than being able to iterate towards good code 
+
+* Myth Buster?!?!
+
+#+BEGIN_QUOTE
+AIs are better at generating code for established programing languages like Java,
+Python, C++, ... than less established, niche languages like Haskell, Scala,
+Elixir!
+#+END_QUOTE
+
+#+REVEAL_HTML: <img class="r-stretch" src="./images/robot.webp"/>
 
 * Myth Busted!!!
   
+#+REVEAL_HTML: <img class="r-stretch" src="./images/busted.png"/>
+
 * Q&A
 
