@@ -44,7 +44,7 @@
 
 * Roland
 
-#+REVEAL_HTML: <figure><img width="50%" src="./images/robot.webp"/><figcaption style="font-size: 0.5em;">Source: <a href="https://www.meetup.com/the-augmented-software-engineer">https://www.meetup.com/the-augmented-software-engineer</a></figcaption></figure>
+#+REVEAL_HTML: <figure><img width="40%" src="./images/robot.webp"/><figcaption style="font-size: 0.5em;">Source: <a href="https://www.meetup.com/the-augmented-software-engineer">https://www.meetup.com/the-augmented-software-engineer</a></figcaption></figure>
 
 * Thank you!
 
