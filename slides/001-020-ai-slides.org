@@ -53,8 +53,8 @@ Elixir!
 
 * Part 1 - The result
 
-- Tokens
-- Money
+- Time
+- Tokens/Money
 - Quality
 
 * Part 1 - The result
@@ -62,14 +62,20 @@ Elixir!
 :REVEAL_EXTRA_ATTR: class="no-title"
 :END:
 
-#+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-14-chart-solver-minutes-scala-vs-python.png"/>
+#+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-15-chart-solver-minutes-days01-09-scala-vs-python.png"/>
 
 * Part 1 - The result
 :PROPERTIES:
 :REVEAL_EXTRA_ATTR: class="no-title"
 :END:
 
-#+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-14-chart-tokens-fresh-output-scala-vs-python.png"/>
+#+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-15-chart-tokens-fresh-output-days01-09-scala-vs-python.png"/>
+
+* Part 1 - The result
+
+- Time
+- Tokens/Money
+- Quality
 
 * Part 2 - The research
 
