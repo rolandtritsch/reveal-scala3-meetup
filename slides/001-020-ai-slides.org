@@ -34,6 +34,13 @@ Elixir!
 
 #+REVEAL_HTML: <figure><img src="./images/aoc-solver-2025-dashboard.png" width="80%"/><figcaption style="font-size: 0.5em;"><a href="https://paperclip.ing">Source: https://paperclip.ing</a></figcaption></figure>
 
+* Part 1 - The dark factory
+:PROPERTIES:
+:REVEAL_EXTRA_ATTR: class="no-title"
+:END:
+
+#+REVEAL_HTML: <img class="r-stretch" src="./images/ai-systems-evolution.jpeg"/>
+
 * Part 1 - The agents
 
 #+REVEAL_HTML: <figure><img src="./images/aoc-solver-2025-agents.png" width="80%"/><figcaption style="font-size: 0.5em;"><a href="https://paperclip.ing">Source: https://paperclip.ing</a></figcaption></figure>
@@ -49,6 +56,20 @@ Elixir!
 - Tokens
 - Money
 - Quality
+
+* Part 1 - The result
+:PROPERTIES:
+:REVEAL_EXTRA_ATTR: class="no-title"
+:END:
+
+#+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-14-chart-solver-minutes-scala-vs-python.png"/>
+
+* Part 1 - The result
+:PROPERTIES:
+:REVEAL_EXTRA_ATTR: class="no-title"
+:END:
+
+#+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-14-chart-tokens-fresh-output-scala-vs-python.png"/>
 
 * Part 2 - The research
 
