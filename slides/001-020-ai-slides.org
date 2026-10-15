@@ -1,5 +1,5 @@
 #+TITLE: Scala3 and AI: Friends or Foes
-#+SUBTITLE: Augmented Software Engineering Meetup
+#+SUBTITLE: Scala(3) Meetup
 #+DATE: 08-Oct-2026
 #+AUTHOR: Roland Tritsch
 #+EMAIL: roland@tritsch.email
