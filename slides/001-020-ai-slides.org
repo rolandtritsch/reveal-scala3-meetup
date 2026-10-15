@@ -86,9 +86,12 @@ Elixir!
 
 * Part 1 - The result
 
-- Time - No evidence that Scala is slower than Python (despite sbt)
-- Tokens/Money - No evidence that Scala is more expensive than Python
-- Quality - No evidence that the Scala code is worse than the Python code 
+- Time
+  - No evidence that Scala is slower than Python (despite sbt)
+- Tokens/Money
+  - No evidence that Scala is more expensive than Python
+- Quality
+  - No evidence that the Scala code is (significantly) worse than the Python code
 
 * Part 2 - The research
 
@@ -107,10 +110,17 @@ Programming Languages - https://mgree.github.io/papers/2022_multiple.pdf
 
 * Part 2 - The results
 
+- Codex showed no statistically significant performance/quality difference between Scala and Python
+- Language popularity alone does not explain code-generation performance
+- The myth does not hold as a blanket rule
+
+* My experience/opinion
+
 - The size of the corpus matters less than expected
-- The quality of the corpus matters (less good/young code is better, than a lot of bad/old code)
+- The quality of the corpus matters (less good/young code is better than a lot of bad/old code)
 - The language being statically typed (with a good compiler and good error messages) matters
   - Getting it right the first time matters less, than being able to iterate towards good code 
+
 
 * Myth Buster?!?!
 
