@@ -22,9 +22,26 @@ Elixir!
 
 #+REVEAL_HTML: <img class="r-stretch" src="./images/robot.webp"/>
 
+#+BEGIN_NOTES
+- Let's have some fun with this. Let's bust that myth!!!
+- Preview the two sources of evidence: a Scala-versus-Python Advent of Code
+  experiment and a published multilingual benchmark. Keep the question open
+  until we have seen both.
+#+END_NOTES
+
 * Full disclosure
 
 #+REVEAL_HTML: <figure><img src="./images/z-l-continuum_roland.png" height="480"/><figcaption style="font-size: 0.5em;">Source: <a href="https://sub.thursdai.news/p/the-lopopolo-zechner-spectrum">https://sub.thursdai.news</a></figcaption></figure>
+
+#+BEGIN_NOTES
+- Point to the red circle as my position on the spectrum: comfortable giving
+  agents substantial autonomy. That preference shapes the experiment I chose to
+  run.
+- Explain that the spectrum describes how closely people inspect AI-generated
+  code. Invite the audience to place themselves somewhere along it.
+- Being comfortable with autonomy still leaves a need for tests, review, and
+  measurable outcomes. Use that to introduce the factory's checks and handoffs.
+#+END_NOTES
 
 * Disclaimer
 
@@ -32,13 +49,46 @@ Elixir!
 - Feel free to disagree
 - The hypothesis is tongue-in-cheek
 
+#+BEGIN_NOTES
+- Describe this as an exploratory experiment with a small sample and some messy
+  operational details. It can challenge an assumption without settling the
+  question for every model or project.
+- Invite disagreement about the setup, measurements, and interpretation. Make
+  it easy for people to distinguish the data from my opinions.
+- Explain the playful framing of the hypothesis. The useful question is what
+  evidence should guide our choice of language when working with AI.
+#+END_NOTES
+
 * Part 1 - The test
 
 #+REVEAL_HTML: <figure><img src="./images/aoc.png" width="60%"/><figcaption style="font-size: 0.5em;"><a href="https://adventofcode.com/2025">Source: https://adventofcode.com/2025</a></figcaption></figure>
 
+#+BEGIN_NOTES
+- Introduce Advent of Code as the shared workload: the same puzzle parts
+  implemented in Scala and Python. This gives us concrete problems and
+  checkable answers.
+- The comparison covers Days 1-9, with two parts per day and 18 measured parts
+  per language. Part two often builds on part one, so these are related tasks.
+- A correct puzzle answer gives us one useful outcome measure. These compact
+  algorithmic tasks still leave open how well the findings transfer to a large
+  production codebase.
+#+END_NOTES
+
 * Part 1 - The dark factory
 
 #+REVEAL_HTML: <figure><img src="./images/aoc-solver-2025-dashboard.png" width="80%"/><figcaption style="font-size: 0.5em;"><a href="https://paperclip.ing">Source: https://paperclip.ing</a></figcaption></figure>
+
+#+BEGIN_NOTES
+- Use the dashboard to make the dark-factory idea concrete: tasks move through
+  an agent-driven workflow. Paperclip provides the coordination view shown
+  here.
+- Explain that the experiment includes gathering the problem, solving it,
+  submitting the answer, and reviewing the result. Each stage leaves artifacts
+  we can inspect.
+- Distinguish the whole workflow from the solver stage we will measure in the
+  charts. Queues, review, and service interruptions can make overall completion
+  much longer.
+#+END_NOTES
 
 * Part 1 - The dark factory
 :PROPERTIES:
@@ -47,9 +97,39 @@ Elixir!
 
 #+REVEAL_HTML: <img class="r-stretch" src="./images/ai-systems-evolution.jpeg"/>
 
+#+BEGIN_NOTES
+- Main point: Blue is what you should buy. Red is what you should build.
+- Walk through the diagram from a single model call to an agent that acts,
+  observes results, and tries again. The tools and feedback loop make iterative
+  software work possible.
+- Point out what the surrounding harness supplies: instructions, context,
+  filesystem access, and stopping rules. Those choices can influence results
+  alongside model capability.
+- Finish at the control plane, which adds coordination and accountability
+  across agents. Connect that layer to the Paperclip dashboard on the previous
+  slide.
+#+END_NOTES
+
 * Part 1 - The agents
 
 #+REVEAL_HTML: <figure><img src="./images/aoc-solver-2025-agents.png" width="80%"/><figcaption style="font-size: 0.5em;"><a href="https://paperclip.ing">Source: https://paperclip.ing</a></figcaption></figure>
+
+#+BEGIN_NOTES
+- Start with the CTO as coordinator, then follow the main chain through
+  gatherer, solver, submitter, and reviewer. Give each role a clear
+  responsibility in one phrase.
+- Point out the Model Tester and WatchDog as supporting roles for model checks
+  and operational observation. Their work is separate from the puzzle solver's
+  measured run.
+- Explain why handoffs matter: a solved part still needs submission and review
+  before the workflow should advance. Role separation gives us places to
+  inspect what happened.
+- Also talk about loop-engineering. Three loops here ...
+  - Outer loop to solve all days/parts
+  - Inner loop to keep on working on the solution until the result can be
+    successfully submitted
+  - Develop a solution until it produces a/the result
+#+END_NOTES
 
 * Part 1 - The setup
 
@@ -57,11 +137,35 @@ Elixir!
 - AOC Solver 2025 (Scala/Python)
 - Openrouter (DeepSeek V4 Flash/Pro)
 
+#+BEGIN_NOTES
+- Summarize the stack in three layers: Paperclip coordinates, the Scala and
+  Python companies execute the tasks, and OpenRouter supplies access to the
+  DeepSeek models. Keep the infrastructure explanation brief.
+- Explain that language is only one variable in an agent run. Repository
+  instructions, build tools, context reuse, and recovery work also affect the
+  measurements.
+- Present this as a comparison of these two working setups. Avoid implying that
+  every environmental detail was controlled as it would be in a repeated
+  laboratory benchmark.
+#+END_NOTES
+
 * Part 1 - The result
 
 - Time
 - Tokens/Money
 - Quality
+
+#+BEGIN_NOTES
+- Introduce the three questions: how long did the solver take, how many tokens
+  did it use, and what quality of code did it produce? Each chart answers a
+  different question.
+- Explain that time includes implementation and verification work, while token
+  usage reflects model interactions. Dollar cost requires additional pricing
+  information.
+- Set the expectation that accepted answers are only the start of quality
+  assessment. We also want readable code, suitable algorithms, and useful
+  tests.
+#+END_NOTES
 
 * Part 1 - The result
 :PROPERTIES:
@@ -70,6 +174,23 @@ Elixir!
 
 #+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-15-chart-solver-minutes-days01-09-scala-vs-python.png"/>
 
+#+BEGIN_NOTES
+- The clock covers the solver agent's reading, implementation, tool calls,
+  compilation, tests, Git operations, and handoff. Gathering the puzzle and
+  subsequent submission and review are outside this measurement.
+- Across all 18 parts, median times are close: 5 minutes 21 seconds for
+  Scala and 5 minutes 3 seconds for Python.
+- Python is faster on 10 parts and Scala on 8, with several near ties.
+  The direction changes between puzzles, so the chart shows no consistent
+  per-part winner.
+- Some taller Scala bars include build and workflow recovery: Day04 part1
+  investigated why sbt reported no tests, while Day05 part1 hit SemanticDB
+  access failures and a test correction. These bars include time spent fixing
+  the development environment and verifying the code.
+- The Scala numbers are in the high side and can be improved by using an sbt
+  deamon.
+#+END_NOTES
+
 * Part 1 - The result
 :PROPERTIES:
 :REVEAL_EXTRA_ATTR: class="no-title"
@@ -77,12 +198,66 @@ Elixir!
 
 #+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-15-chart-tokens-fresh-output-days01-09-scala-vs-python.png"/>
 
+#+BEGIN_NOTES
+- Each bar adds the solver's fresh input and output tokens for one puzzle
+  part, with Scala in blue and Python in orange. Cached input is excluded.
+- Across all 18 parts, Scala uses about 2.49 million fresh-plus-output tokens
+  and Python about 2.34 million, a difference of roughly 6%. Median usage is
+  about 108,000 for Scala and 90,000 for Python.
+- Cached context is substantial: about 37.7 million tokens for Scala and
+  18.2 million for Python. Excluding it makes this chart easier to read, but
+  leaves out a large share of recorded consumption.
+- Python's Day03 part2 spike is about 487,000 tokens, mostly fresh input.
+  The report attributes it to verification output from brute-force checks
+  against samples and 2,000 random banks flooding the context.
+- Scala's Day09 part2 spike is about 543,000 tokens, including 59,000 output
+  tokens. The report links it to geometry design, extensive cross-checking,
+  and an overlapping solver session that appears to have inflated context.
+- Scala's next-largest bar is Day05 part2 at about 268,000 tokens.
+  Its interval-merging solution also involved build-cache recovery and repeated
+  verification, so token usage includes development overhead.
+- These are selected solver-run counts, excluding gather, submit, review,
+  and superseded attempts such as Python's first Day01 part1 run. They measure
+  one stage of the workflow rather than the entire factory's consumption.
+- Token counts alone do not establish a money ranking: fresh input, cached
+  input, and output have different prices. The modest aggregate gap here
+  supports a narrower claim about this token metric, not equal dollar costs.
+- Note: Highlight that  the two outliers are  more a bug in the  harness, than a
+  reflection on the language to solve the problem.
+#+END_NOTES
+
 * Part 1 - The result
 :PROPERTIES:
 :REVEAL_EXTRA_ATTR: class="no-title"
 :END:
 
 #+REVEAL_HTML: <img class="r-stretch" src="./images/2026-10-15-chart-quality-days01-09.png"/>
+
+#+BEGIN_NOTES
+- Each bar rates the generated code for one puzzle part from 1, poor, to 5,
+  excellent. The colors switch on this chart: Python is blue and Scala orange.
+- The score averages five equally weighted dimensions: correctness robustness,
+  readability, idiomatic language use, test depth, and simplicity/efficiency.
+  It assesses code and tests beyond whether the puzzle answer was accepted.
+- Python averages 4.67 and Scala 4.04, with Python ahead on 16 parts and two
+  ties. Both languages solve all 18 parts, while this rubric favors the Python
+  implementations overall.
+- The largest gaps are 1.4 points on Day03 part1, Day04 part2, and Day05 part1.
+  The report credits Python's linear digit scan, queue-based grid updates,
+  and merged-range lookup over Scala's more repetitive scans.
+- Test depth also contributes: the report describes broader sample, real-input,
+  and boundary tests in Python. On Day07, it additionally favors Python's
+  structure and input validation despite similar algorithmic complexity.
+- Day08 ties at 4.0 for both parts, with comparable union-find approaches
+  and duplicated helpers. Day01 is also close, at 5.0 for Python and 4.8 for
+  Scala on both parts.
+- Muse Spark produced these ratings in a single judging pass using source
+  code and automated evidence. There was no blinded panel or second model,
+  and efficiency was assessed by code reading rather than runtime benchmarks.
+- The chart shows a quality advantage for Python under this rubric, alongside
+  broadly good Scala results. It does not establish statistical significance
+  or a general limit on the quality AI can produce in Scala.
+#+END_NOTES
 
 * Part 1 - The result
 
@@ -93,6 +268,18 @@ Elixir!
 - Quality
   - No evidence that the Scala code is (significantly) worse than the Python code
 
+#+BEGIN_NOTES
+- Summarize timing as broadly comparable in this sample: medians are close,
+  with each language faster on some parts. Scala's aggregate solver time is
+  modestly higher.
+- The fresh-input-plus-output totals are close, but cached usage differs
+  substantially. We need pricing and complete usage accounting before drawing a
+  dollar-cost conclusion.
+- Acknowledge the quality rubric's preference for Python, averaging 4.67
+  against Scala's 4.04. Both solve the tasks, but the displayed scores do show
+  a gap whose generality remains uncertain.
+#+END_NOTES
+
 * Part 2 - The research
 
 #+BEGIN_QUOTE
@@ -100,13 +287,47 @@ A Scalable and Extensible Approach to Benchmarking NL2Code for 18
 Programming Languages - https://mgree.github.io/papers/2022_multiple.pdf
 #+END_QUOTE
 
+#+BEGIN_NOTES
+- Introduce MultiPL-E as a published way to compare code generation across
+  languages using translated problems and tests. It gives the anecdotal
+  experiment a broader research context.
+- The study evaluates generated functions with tests, rather than running a
+  full agent workflow. Its success metric differs from our time, token, and
+  maintainability measures.
+- Identify the paper as a 2022 study of Codex and InCoder. Use it as evidence
+  about those evaluations rather than a ranking of today's models.
+#+END_NOTES
+
 * Part 2 - The languages
 
 #+REVEAL_HTML: <figure><img src="./images/multiple-languages.png" width="40%"/><figcaption style="font-size: 0.5em;"><a href="https://mgree.github.io/papers/2022_multiple.pdf">Source: https://mgree.github.io/papers/2022_multiple.pdf</a></figcaption></figure>
 
+#+BEGIN_NOTES
+- Point out the range of language families, typing styles, and popularity
+  categories. Python supplies the original benchmark, with 18 additional target
+  languages.
+- Locate Scala in the low-frequency group beside languages with much larger
+  measured footprints. This makes it a useful case for testing the popularity
+  hypothesis.
+- Treat the table's popularity figures as historical proxies. They do not
+  directly measure the models' training data.
+#+END_NOTES
+
 * Part 2 - The findings
 
 #+REVEAL_HTML: <figure><img src="./images/multiple-features.png" width="50%"/><figcaption style="font-size: 0.5em;"><a href="https://mgree.github.io/papers/2022_multiple.pdf">Source: https://mgree.github.io/papers/2022_multiple.pdf</a></figcaption></figure>
+
+#+BEGIN_NOTES
+- Explain that pass@1 measures success with one generated candidate, and each
+  panel groups problems by a language feature. Higher bars mean more candidates
+  passed the tests.
+- Use the highlighted Scala column to show that relative performance varies
+  across feature groups. The dictionary panel illustrates a weakness hidden by
+  an overall average.
+- Keep this figure separate from our code-quality scores: it measures test
+  success. Avoid reading a universal Scala-versus-Python ranking from
+  individual panels.
+#+END_NOTES
 
 * Part 2 - The results
 
@@ -114,13 +335,35 @@ Programming Languages - https://mgree.github.io/papers/2022_multiple.pdf
 - Language popularity alone does not explain code-generation performance
 - The myth does not hold as a blanket rule
 
+#+BEGIN_NOTES
+- State the paper's overall finding that Codex performed comparably on Scala
+  and Python in this benchmark. That concerns functional correctness, rather
+  than maintainability.
+- Popularity correlated with performance, but did not determine it. Some less
+  common languages performed well.
+- Return to the blanket hypothesis: language frequency alone is insufficient to
+  predict generated-code success. Keep that conclusion tied to the tested
+  models and tasks.
+#+END_NOTES
+
 * My experience/opinion
 
 - The size of the corpus matters less than expected
 - The quality of the corpus matters (less good/young code is better than a lot of bad/old code)
 - The language being statically typed (with a good compiler and good error messages) matters
-  - Getting it right the first time matters less, than being able to iterate towards good code 
+  - Getting it right the first time matters less, than being able to iterate towards good code
 
+#+BEGIN_NOTES
+- Mark this transition explicitly as my interpretation of the evidence. I
+  suspect useful examples and feedback can matter more than raw corpus size
+  alone suggests.
+- Explain why I value a compiler in an agent loop: it supplies concrete errors
+  that can guide the next edit. Treat that as a proposed mechanism rather than
+  something this experiment isolated.
+- Focus on the ability to converge on a good result through tests and
+  corrections. Invite the audience to compare that with their own Scala
+  development experience.
+#+END_NOTES
 
 * Myth Buster?!?!
 
@@ -132,9 +375,42 @@ Elixir!
 
 #+REVEAL_HTML: <img class="r-stretch" src="./images/robot.webp"/>
 
+#+BEGIN_NOTES
+- Read the opening claim again and ask whether the evidence still supports it
+  as a general rule. Give the audience a moment to reconsider their initial
+  answer.
+- Recall the two observations: Scala completed the same puzzle workload, and
+  the research found competitive Scala generation performance. Also acknowledge
+  Python's advantage under our quality rubric.
+- Reframe the practical question around the model, task, tooling, and
+  verification available for a language. Popularity is one clue among several.
+#+END_NOTES
+
 * Myth Busted!!!
   
 #+REVEAL_HTML: <img class="r-stretch" src="./images/busted.png"/>
 
+#+BEGIN_NOTES
+- Deliver the playful verdict: the blanket claim is busted. A less popular
+  language can still be a practical choice for AI-assisted coding.
+- Keep the verdict proportionate to the evidence: our runs had limitations, and
+  Python scored higher on quality. We have challenged inevitability rather than
+  proved universal Scala superiority.
+- Leave the audience with an action: try a representative task in their own
+  Scala setup and inspect the result. Measure correctness, effort, and code
+  quality together.
+#+END_NOTES
+
 * Q&A
+
+#+BEGIN_NOTES
+- Invite questions about the agent workflow, the measurements, or the research.
+  Let the audience choose which thread to explore first.
+- Ask whether their experience with AI-generated Scala matches these results.
+  Concrete examples of successes and failures can help identify what to test
+  next.
+- If discussion turns to a follow-up experiment, suggest repeated runs with
+  isolated histories and independent quality review. Close by thanking people
+  for their questions and counterexamples.
+#+END_NOTES
 
