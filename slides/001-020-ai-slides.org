@@ -280,6 +280,36 @@ Elixir!
   a gap whose generality remains uncertain.
 #+END_NOTES
 
+* Part 1 - The result - Bonus
+:PROPERTIES:
+:REVEAL_EXTRA_ATTR: class="no-title"
+:END:
+
+#+REVEAL_HTML: <img class="r-stretch" src="./images/tokens-cost.png"/>
+
+#+BEGIN_NOTES
+- First block is Scala. Second block is Python.
+- About the same.
+- In both cases solving the problems with the Pro model is less than USD 10.
+- The Flash model is the gathering, submitting and verifying. 
+#+END_NOTES
+
+* Part 1 - The result - Bonus
+
+- Let's assume a Senior Engineer needs an 1 hour per part. That is 18 hours (~2 days).
+- The dark factories had a mean of 5 mins per part. That is 90 mins.
+- The cost of a Senior Engineer (fully loaded) is USD 800/day. That makes USD 1600.
+- The cost of tokens was less than USD 10 (in any language).
+
+#+BEGIN_QUOTE
+Just think of every problem as a very well defined bug fix ticket with a very
+well defined test-case (to verify the fix). **The gains are significant!**
+#+END_QUOTE
+
+#+BEGIN_NOTES
+- This will free up time and money to build more product/features.
+#+END_NOTES
+
 * Part 2 - The research
 
 #+BEGIN_QUOTE
